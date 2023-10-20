@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+    <title>Calficaciones</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="notas.js"></script>
+   
+</head>
+<body onload="capturarNotas()">
+    <h1>Boletin de Calificaciones</h1>
+    <!-- <button onclick="lista()">Mostrar Notas</button>
+    <h1 id="resultado"></h1>   -->
+    
+    <h3>Alumno: </h3>
+
+    <h4>Notas</h4>
+    <ul id="listarNotas"></ul>
+
+<div class="info">
+    <h4>Promedio: <span id="promedio"></span></h4>
+    <button onclick="calcularPromedio()">Calcular Promedio</button>
+
+    <h4>Nota mas alta: <span id="nota"></span></h4>
+    <button onclick="notaAlta()">Buscar la nota mas alta</button>
+
+    <h4>Hubo aplazo: <span id="aplazo"></span></h4>
+    <button onclick="aplazo()">Consultar Aplazo</button>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
