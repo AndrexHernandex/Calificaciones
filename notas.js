@@ -5,11 +5,14 @@ function capturarNotas() {
     calificaciones.length = 0; // Reiniciar el arreglo para evitar duplicaciones
 
     for (let i = 1; i <= 5; i++) {
-        let notacap = parseFloat(prompt(`Ingresa la nota ${i}:`));
+        const nota = parseFloat(prompt(`Ingresa la nota ${i}:`));
+
+        if (!isNaN(nota)) {
+            calificaciones.push(nota);
+        }
     }
-    
-    document.getElementById("notacap").textContent = notacap;
-    notacap = calificaciones;
+
+    listarNotas();
 }
 
 function listarNotas(resultado){
