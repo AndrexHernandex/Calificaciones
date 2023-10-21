@@ -1,11 +1,15 @@
 
 let calificaciones = [];
+function capturarNombre(){
+    let nombre = prompt(`Ingrese el nombre del estudiante:`);
+     document.getElementById("nombre").textContent = nombre;
 
+}
 function capturarNotas() {
     calificaciones.length = 0; // Reiniciar el arreglo para evitar duplicaciones
 
     for (let i = 1; i <= 5; i++) {
-        const nota = parseFloat(prompt(`Ingresa la nota ${i}:`));
+        let nota = parseFloat(prompt(`Ingresa la nota ${i}:`));
 
         if (!isNaN(nota)) {
             calificaciones.push(nota);

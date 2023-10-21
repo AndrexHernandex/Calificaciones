@@ -6,24 +6,31 @@
    
 </head>
 <body>
+    
+  <div class="info">
     <h1>Boletin de Calificaciones</h1>
-    <button onclick="capturarNotas()">Captura Notas</button>
-    
-    
-    <h3>Alumno: </h3>
+    <button onclick="capturarNombre()">Ingresar el nombre</button><br>
+    <h3>Alumno: <span id="nombre"></span></h3>
 
+</div>    
+    
+<div  > 
+<button onclick="capturarNotas()">Captura Notas</button>
+    
     <h4>Notas</h4>
-    <ul id="listarNotas"></ul>
+    <ul id="listarNotas"></ul> 
+</div>
 
 <div class="info">
-    <h4>Promedio: <span id="promedio"></span></h4>
-    <button onclick="calcularPromedio()">Calcular Promedio</button>
+   
+    <button onclick="calcularPromedio()">Calcular Promedio</button>  
+    <h2>Promedio: <span id="promedio"></span></h2>
 
-    <h4>Nota mas alta: <span id="nota"></span></h4>
     <button onclick="notaAlta()">Buscar la nota mas alta</button>
+    <h2>Nota mas alta: <span id="nota"></span></h2>
 
-    <h4>Hubo aplazo: <span id="aplazo"></span></h4>
     <button onclick="aplazo()">Consultar Aplazo</button>
+    <h2>Hubo aplazo: <span id="aplazo"></span></h2>
 </div>
 
     <script src="script.js"></script>
